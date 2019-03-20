@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #7ed6df;
+    font-family: 'Baloo Chettan', cursive;
+    color: #dff9fb;
+    letter-spacing: 5px;
+    font-weight: 300;
+}
+
+header {
+    display:flex;
+    justify-content: center;
+    background-color: #95afc0;
+    
+}
+
+.container {
+    display:flex;
+    width: 900px;
+    
+
+}
+
+.title-bar {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0 20px 0;
+    background-color:#95afc0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.geladeira-container {
+    display: flex;
+    margin-top: 20px;
+}
+
+.btn {
+    width:100px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-abrir {
+    background-color: #6ab04c;
+}
+
+.btn-fechar {
+    background-color: #eb4d4b;
+}

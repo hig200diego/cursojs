@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Minha Geladeira Virtual 1.0</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="geladeira.css">
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="title-bar">
+                <div class="title">
+                    <h2>Minha Geladeira Virtual 1.0</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="geladeira-container">
+            <button onclick="abrir()" class="btn btn-abrir">Abrir</button>
+            <img src="close_fridge.png" width="400" height="400" alt="Geladeira fechada" id="minhaGeladeira">
+            <button onclick="document.getElementById('minhaGeladeira').src='close_fridge.png'" class="btn btn-fechar">Fechar</button>
+        </div>
+        
+    </main>
+
+ 
+<script src="geladeira.js"></script>
+</body>
+</html>

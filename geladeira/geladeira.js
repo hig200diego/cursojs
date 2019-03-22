@@ -100,7 +100,7 @@ function abrir() {
             alert("Comida encontrada!");
         } else { 
             alert("Comida não encontrada. Deseja adcionar? "); // caso a comida não for encontrada.
-            respostaUsuario = prompt("Sim ou Não");
+            respostaUsuario = prompt("Sim ou Não? ");
             
             if (respostaUsuario == "Sim") {
                 alimentos.push(escolha_comida); // adciona a comida no Array "alimentos"

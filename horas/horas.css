@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Patrick+Hand');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Patrick Hand', cursive;
+}

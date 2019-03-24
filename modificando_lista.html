@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Modificando uma lista</title>
+	<script>
+		function adcionar() {
+			var ingrediente = document.getElementById("ingrediente").value;
+
+			// armazena conteúdo da lista
+			var listahtml = document.getElementById("lista").innerHTML;
+
+			// Recebe o valor pelo input e concatena 
+			listahtml = listahtml + "<li>"+ingrediente+"</li>"
+
+			// Adciona o novo item na lista
+			document.getElementById("lista").innerHTML = listahtml;
+		}
+	</script>
+</head>
+<body>
+	<h3>Livros que já li</h3>
+	<input type="text" name="" id="ingrediente">
+	<button onclick="adcionar()">Adcionar</button>
+
+	<ul id="lista">
+		<li>Guerra dos Tronos</li>
+	</ul>
+</body>
+</html>

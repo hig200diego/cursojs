@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Projeto: Advinhe o número</title>
+    <style>
+        #n1 {
+            width: 200px;
+            height: 200px;
+            border: 1px solid #eee;
+            float: left;
+            margin-right: 10px;
+            font-size: 100px;
+            text-align: center;
+            line-height: 200px;
+            background-color: #eee;
+        }
+
+        #n2 {
+            width: 200px;
+            height: 200px;
+            border: 1px solid #000;
+            float: left;
+            margin-right: 10px;
+            font-size: 100px;
+            text-align: center;
+            line-height: 200px;
+        }
+
+        button {
+            width: 410px;
+            height: 40px;
+            margin-top: 10px;
+            font-size: 20px;
+            border: none;
+            background-color: mediumslateblue;
+            color: #eee;
+        }
+    </style>
+</head>
+<body onload="resetar()">
+    <div id="n1"></div>
+    <input type="text" id="n2">
+    <div style="clear:both"></div>
+    <button onclick="verificar()">Verificar</button>
+ 
+<script>
+    function verificar() {
+        var n1 = document.getElementById("n1").innerHTML;
+        var n2 = document.getElementById("n2").value;
+
+        if (n2 == "") {
+            alert("Digite algum número!");
+
+        } else if (n1 == n2) {
+            alert("Você acertou!");
+        } else {
+            alert("Você errou!");
+        }
+        resetar();
+
+
+    }
+
+    function resetar() {
+        document.getElementById("n2").value = "";
+        var numeroAleatorio =  Math.floor(Math.random() * 101);
+        document.getElementById("n1").innerHTML = numeroAleatorio;
+    }
+
+</script>
+</body>
+</html>

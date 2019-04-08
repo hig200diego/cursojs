@@ -104,7 +104,7 @@ function abrir() {
             
             if (respostaUsuario == "Sim") {
                 alimentos.push(escolha_comida); // adciona a comida no Array "alimentos"
-                alert("Pronto. Comida adcionada!");
+                alert("Pronto! Comida adcionada.");
             } else if (respostaUsuario == "Não") { // Se o usuário digitar "Não"...
                 alert("Tudo bem. Você poderá fazer isso depois.");
             }

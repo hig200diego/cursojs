@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Usando Eventos de Mouse do JavaScript</title>
+</head>
+<body>
+
+	<!--
+		Pode-se aplicar vários tipos de eventos diferente em uma mesma tag. Os eventos são esses:
+		1. onMouseDown;
+		2. onMouseUp;
+		3. onMouseOver;
+		4. onMouseMove
+		5. onClick = "EVENTO MAIS IMPORTANTE";
+	-->
+
+	<button onMouseDown="apertaMouse()" onMouseUp="soltaMouse()" 
+	onMouseOver="mouseEncima()" onMouseOut="mouseFora()" onMouseMove="mouseMove()">Eventos de Mouse</button>
+
+
+
+
+
+
+<script type="text/javascript">
+
+	//Aperta o mouse
+	function apertaMouse() {
+		console.log("Você apertou o mouse!");
+	}
+
+	//Solta o mouse
+	function soltaMouse() {
+		console.log("Você soltou o mouse!");
+	}
+
+	//Quando o mouse estiver em cima do objeto 
+	function mouseEncima() {
+		console.log("Mouse em cima do botão!");
+	}
+
+	//Quando o mouse estiver fora do objeto
+	function mouseFora() {
+		console.log("O mouse está fora do botão!");
+	}
+
+	//Quando o mouse move em cima do objeto
+	function mouseMove() {
+		console.log("Mouse movendo em cima do botão");
+	}
+	
+</script>
+</body>
+</html>

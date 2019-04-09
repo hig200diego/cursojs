@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Aula sobre SELECTOR | Mudando a Cor do Background</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	var body = document.querySelector("body"); // Seleciona o 'body'
+	var isBlue = false;
+
+	setInterval(function() { // Manipulação
+		if (isBlue) {
+			body.style.background = "#fff";
+		} else {
+			body.style.background = "blue";	
+		}
+		isBlue = !isBlue;
+	}, 1000); // ==> A cada 1 segundo a cor do background muda para azul
+
+	// Tentar fazer um script que mude a cor do background de forma aleatória
+</script>
+</body>
+</html>

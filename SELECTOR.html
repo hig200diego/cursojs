@@ -2,23 +2,66 @@
 <html lang="pt-br">
 <head>
 	<title>Aula sobre SELECTOR | Mudando a Cor do Background</title>
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
+		#cor {
+			text-align: center;
+			margin-top: 160px;
+			font-family: 'Luckiest Guy', cursive;
+			font-size: 60px;
+		}
+	</style>
 </head>
 <body>
 
+	<h1 id="cor">Color is Pop</h1>
+
 <script type="text/javascript">
+	//Função que gera cores aleatórias
+
+	function colorGenerate() {
+		var hexadecimais = "0123456789ABCDF";
+		var color = "#";
+
+		for (var i = 0; i < 6 ; i++) {
+		color += hexadecimais[Math.floor(Math.random() * 16)];
+	}
+
+		return color;
+	}
+
 	var body = document.querySelector("body"); // Seleciona o 'body'
-	var isBlue = false;
+	var isColor = false;
 
-	setInterval(function() { // Manipulação
-		if (isBlue) {
-			body.style.background = "#fff";
+	var tcolor = document.getElementById('cor'); // Seleciona o id do h1
+	var textColor = false;
+
+	setInterval(function() {
+
+	 // Manipulação
+		if (textColor) {
+			tcolor.style.color = colorGenerate();
 		} else {
-			body.style.background = "blue";	
+		    tcolor.style.color = colorGenerate();	
 		}
-		isBlue = !isBlue;
-	}, 1000); // ==> A cada 1 segundo a cor do background muda para azul
 
-	// Tentar fazer um script que mude a cor do background de forma aleatória
+		textColor = !textColor;
+
+	}, 1000); // ==> A cada 1 segundo a cor do background muda para alguma cor aleatória
+
+	setInterval(function() {
+
+	 // Manipulação
+		if (isColor) {
+			body.style.background = colorGenerate();
+		} else {
+			body.style.background = colorGenerate();	
+		}
+
+		isColor = !isColor;
+
+	}, 1000); // ==> A cada 1 segundo a cor do background muda para alguma cor aleatória
+
 </script>
 </body>
 </html>

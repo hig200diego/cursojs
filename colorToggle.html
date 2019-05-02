@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Color Toggle</title>
+	<style>
+		.purple {
+			background: purple;
+		}
+	</style>
+</head>
+<body>
+
+	<button>Click me</button>
+
+<script type="text/javascript">
+
+// forma mais limpa de fazer
+
+document.querySelector("button").addEventListener("click", function() {
+	var bgbody = document.querySelector("body");
+	bgbody.classList.toggle("purple");
+});
+
+//var button = document.querySelector("button");
+//var isPurple = false;
+
+//button.addEventListener("click", function(){
+//	if (isPurple){
+//		document.body.style.background = "white";
+//	} else {
+//		document.body.style.background = "purple";
+//	}
+//
+//	isPurple = !isPurple;
+
+//});
+
+	
+
+	/*
+	NÃO FUNCIONA!!!
+	document.querySelector("button").addEventListener("click", function() {
+		var bgbody = document.querySelector("body");
+		var isPurple = false;
+
+		if(isPurple) {
+			bgbody.style.background = "white";
+			isPurple = false;
+		} else {
+			bgbody.style.background = "purple";
+		}	isPurple = true;
+		
+	});
+	*/
+</script>
+</body>
+</html>

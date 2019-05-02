@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Manipulando texto e conteúdo</title>
+</head>
+<body>
+	<p id="clk">
+		Que <strong>texto</strong> legal!
+	</p>
+<script type="text/javascript">
+	
+
+	document.getElementById('clk').addEventListener('click', changeText);
+
+	function changeText() {
+		var tag = document.querySelector("p");
+		tag.textContent = "Que texto mais feio!";
+	}
+</script>
+</body>
+</html>

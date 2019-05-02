@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Teste som</title>
+	<style type="text/css">
+		.square {
+			background-color: red;
+			width: 100px;
+			height: 100px;
+			border-radius: 15px;
+		}
+	</style>
+</head>
+<body>
+	<div class="square"></div>
+	<audio controls="">
+		<source src="beep.wav" type="audio/wav">
+	</audio>
+
+<script type="text/javascript">
+	var square = document.querySelector(".square");
+	square.addEventListener("click", function() {
+		alert("clicked");
+
+	});
+</script>
+</body>
+</html>

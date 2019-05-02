@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blow Circles</title>
+	<style>
+		.ball {
+			width: 50px;
+			height: 50px;
+			border-radius: 25px;
+			position: absolute;
+		}
+	</style>
+</head>
+<body onLoad="init()">
+
+<script type="text/javascript">
+
+	function init() {
+		setInterval(addBall, 1000)
+	}
+
+
+	function addBall() {
+		var ball = document.createElement("div"); // cria uma div
+		ball.setAttribute("class", "ball"); // adciona estilo na div criada
+		
+
+		// Gera posições aleatórias
+		var p1 = Math.floor(Math.random() * 500);
+		var p2 = Math.floor(Math.random() * 400);
+		var color = Math.floor(Math.random() * 999999);
+		ball.setAttribute("style", "left:"+p1+"px; top:"+p2+"px; background-color:#"+color+";") // Posições aleatórias na tela
+
+		ball.setAttribute("onclick", "blow(this)")
+		document.body.appendChild(ball);
+	}
+
+	//Estourar o as bolinhas
+
+	function blow(elemento) {
+		document.body.removeChild(elemento);
+	}
+</script>
+</body>
+</html>

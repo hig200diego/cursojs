@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Objetos</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	function Animal() {
+		this.nome = "nome";
+		this.cor = "cor";
+		this.peso = "";
+
+		//Metodo
+		this.comer = function(kg) {
+			for(var i = 0; i < kg; i++) {
+				this.mastigar();
+			}
+			console.log("mmmm");
+			this.peso = this.peso + (kg / 2);
+		}
+
+		this.mastigar = function() {
+			console.log(nhoc nhoc...);
+		}
+	}
+
+
+
+	var cao = new Animal();
+	cao.nome = "Veludo";
+	cao.cor = "Preto";
+	cao.peso = 10;
+	cao.comer(50);
+</script>
+</body>
+</html>

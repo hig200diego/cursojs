@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Mudando Estilos via JavaScript</title>
+	<style>
+		.highlight-h1 {
+			color: black;
+			border: 10px;
+			font-size: 70px;
+			background-color: yellow;
+			margin-top: 200px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+
+	<h1 id="highlight">Olá, mundo!</h1>
+
+<script type="text/javascript">
+	var tag = document.getElementById('highlight');
+
+	// Outra alternativa mais limpa de aplicar estilos com JS
+
+	tag.classList.add("highlight-h1");
+
+	/*// Manipulação
+	tag.style.color = "blue";
+	tag.style.border = "10px";
+	tag.style.fontSize = "70px";
+	tag.style.background = "yellow";
+	tag.style.marginTop = "200px";
+	tag.style.textAlign = "center";
+	*/
+
+</script>
+</body>
+</html>
